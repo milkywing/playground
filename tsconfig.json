@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es2018",
+    // "module": "ES6",
+    "sourceMap": true,
+    "declaration": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowJs": false,
+    "strictNullChecks": true,
+    "importHelpers": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@src/*" : ["src/*"]
+    },
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ],
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules",
+    "lib",
+    "index.d.ts",
+    "types",
+    "__*"
+  ]
+}
